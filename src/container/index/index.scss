@@ -1,7 +1,102 @@
-@use '../../style' as s;
+.page {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-main {
-	background: s.color(dark);
-	color: s.color(light);
-	padding: s.space(4);
-} 
+.page__content {
+	max-width: 375px;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+
+.button {
+	&:hover{
+		opacity: 0.7;
+		transition-duration: 0.7s;
+	}
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.text__title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+.content__cards {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.card__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__body {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background-color: rgba(247, 247, 247, 1);
+	border-radius: 8px;
+	padding: 12px;
+}
+
+.card__body__viewed {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border: 1px solid rgba(136, 136, 136, 1);
+	border-radius: 8px;
+	padding: 12px;
+}
+
+.badge {
+	display: flex;
+	gap: 8px;
+}
+
+.important {
+	padding: 8px 12px;
+	background-color: rgba(247, 233, 225, 1);
+	border-radius: 16px;
+	color: rgba(244, 111, 23, 1);
+	font-size: 12px;
+}
+
+.new {
+	padding: 8px 12px;
+	background-color: rgba(246, 232, 239, 1);
+	border-radius: 16px;
+	color: rgba(239, 93, 168, 1);
+	font-size: 12px;
+}
+
+.date__text {
+	color: rgba(136, 136, 136, 1);
+	font-size: 14px;
+}
+
+.card__text {
+	font-size: 16px;
+	line-height: 1.5;
+	color: rgba(54, 54, 54, 1);
+}
+
+.card__text__light {
+	font-size: 16px;
+	line-height: 1.5;
+	color: rgba(136, 136, 136, 1);
+}
